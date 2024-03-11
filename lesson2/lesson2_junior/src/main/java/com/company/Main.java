@@ -7,9 +7,10 @@ public class Main {
     public static void main(String[] args) {
         Date t = new Date();
         int count = 0;
-        int sumA = 0;
-        int sumB = 0;
-        int abs = 0;
+        int sumA;
+        int sumB;
+        int abs;
+
         for (int a1 = 0; a1 < 10; a1++) {
             for (int a2 = 0; a2 < 10; a2++) {
                 sumA = a1 + a2;
@@ -25,7 +26,7 @@ public class Main {
                 }
             }
         }
-        System.out.println(String.format("Count : %d , time = %d ms", count,new Date().getTime() - t.getTime()));
+        System.out.printf("Count : %d , time = %d ms%n", count,new Date().getTime() - t.getTime());
 
     }
 }
